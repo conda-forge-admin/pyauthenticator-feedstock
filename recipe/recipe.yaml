@@ -18,7 +18,8 @@ build:
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
-      - pyauthenticator=pyauthenticator.__main__:command_line_parser
+      - pyauthenticator=pyauthenticator._cmd:command_line_parser
+      - pyauthenticator-mcp=pyauthenticator.mcp_server:main
 
 requirements:
   host:
