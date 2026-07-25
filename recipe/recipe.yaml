@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyauthenticator
-  version: 0.3.1
+  version: "0.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pyauthenticator-${{ version }}.tar.gz
-  sha256: d8ed50cccb8d94537c877e67acd576650effd82b2c660812d5f03e10e8cf44cf
+  sha256: e580e6031fe3f833344d1870b62c05c9aaf53a0c246bc0837bb3ace0d4ef86f2
 
 build:
   number: 0
